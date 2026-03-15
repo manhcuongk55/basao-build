@@ -40,7 +40,7 @@ export default function QuotePage() {
       {step === "input" && (
         <div className="glass-card p-10 max-w-2xl mx-auto">
           <h1 className="text-3xl font-bold mb-2">Nhập thông số dự án</h1>
-          <p className="text-slate-400 mb-8 text-sm">AI sẽ tự động chọn vật liệu tối ưu từ nhà cung cấp VN &amp; TQ.</p>
+          <p className="text-slate-400 mb-8 text-sm">AI sẽ tự động chọn vật liệu, nội thất, kim khí, điện nước &amp; thiết bị tối ưu từ nhà cung cấp VN &amp; TQ.</p>
 
           <div className="space-y-8">
             <div>
@@ -124,7 +124,7 @@ export default function QuotePage() {
 
           {/* Quote line items */}
           <div className="glass-card p-8">
-            <h3 className="text-xl font-bold mb-6">Danh mục vật liệu (BoM)</h3>
+            <h3 className="text-xl font-bold mb-6">Danh mục vật tư & thiết bị (BoM)</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
