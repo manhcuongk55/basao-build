@@ -43,7 +43,12 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
+          <Link href="/favorites" className="hidden md:block text-slate-400 hover:text-red-400 transition-colors" title="Yêu thích">❤️</Link>
+          <Link href="/notifications" className="relative text-slate-400 hover:text-white" title="Thông báo">
+            <span className="text-sm">🔔</span>
+            <span className="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+          </Link>
           <Link href="/messages" className="relative md:hidden">
             <span className="text-lg">💬</span>
             <span className="absolute -top-1 -right-1 w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
@@ -76,6 +81,9 @@ export default function Navbar() {
                 </Link>
               ))}
               <div className="border-t border-white/10 pt-4 mt-4 space-y-2">
+                <Link href="/notifications" onClick={() => setOpen(false)} className="block py-3 px-4 rounded-xl text-sm text-slate-400 hover:bg-white/5">🔔 Thông báo</Link>
+                <Link href="/favorites" onClick={() => setOpen(false)} className="block py-3 px-4 rounded-xl text-sm text-red-400 hover:bg-red-500/5">❤️ Yêu thích</Link>
+                <Link href="/help" onClick={() => setOpen(false)} className="block py-3 px-4 rounded-xl text-sm text-slate-400 hover:bg-white/5">❓ Trợ giúp</Link>
                 <Link href="/register" onClick={() => setOpen(false)} className="block py-3 px-4 rounded-xl text-sm text-slate-400 hover:bg-white/5">👤 Đăng ký / Đăng nhập</Link>
                 <Link href="/register/supplier" onClick={() => setOpen(false)} className="block py-3 px-4 rounded-xl text-sm text-amber-400 hover:bg-amber-500/5">🏭 Đăng ký NCC</Link>
                 <Link href="/supplier/dashboard" onClick={() => setOpen(false)} className="block py-3 px-4 rounded-xl text-sm text-slate-400 hover:bg-white/5">📊 Cổng NCC</Link>
