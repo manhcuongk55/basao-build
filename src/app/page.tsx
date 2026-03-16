@@ -20,8 +20,10 @@ export default function Home() {
         <div className="hidden md:flex gap-5 text-sm text-slate-400">
           <Link href="/suppliers" className="hover:text-white transition-colors">Nhà cung cấp</Link>
           <Link href="/quote" className="hover:text-white transition-colors">Báo giá</Link>
+          <Link href="/agent" className="hover:text-white transition-colors text-emerald-400">🤖 AI Agent</Link>
           <Link href="/logistics" className="hover:text-white transition-colors text-red-400">🇨🇳 Logistics TQ</Link>
           <Link href="/payment" className="hover:text-white transition-colors">Thanh toán</Link>
+          <Link href="/register" className="hover:text-white transition-colors">Đăng ký</Link>
           <Link href="/supplier/dashboard" className="hover:text-white transition-colors text-amber-400">Cổng NCC</Link>
         </div>
         <Link href="/quote" className="premium-button py-2 text-sm">Báo giá ngay →</Link>
