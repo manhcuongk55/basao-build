@@ -17,14 +17,16 @@ export default function Home() {
           <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center font-bold text-white text-sm">B</div>
           <span className="font-bold text-lg tracking-tight">BASAO <span className="text-blue-400">BUILD</span></span>
         </div>
-        <div className="hidden md:flex gap-5 text-sm text-slate-400">
-          <Link href="/suppliers" className="hover:text-white transition-colors">Nhà cung cấp</Link>
+        <div className="hidden md:flex gap-4 text-sm text-slate-400">
+          <Link href="/search" className="hover:text-white transition-colors">🔍</Link>
+          <Link href="/suppliers" className="hover:text-white transition-colors">NCC</Link>
           <Link href="/quote" className="hover:text-white transition-colors">Báo giá</Link>
-          <Link href="/agent" className="hover:text-white transition-colors text-emerald-400">🤖 AI Agent</Link>
-          <Link href="/logistics" className="hover:text-white transition-colors text-red-400">🇨🇳 Logistics TQ</Link>
+          <Link href="/agent" className="hover:text-white transition-colors text-emerald-400">🤖 Agent</Link>
+          <Link href="/compare" className="hover:text-white transition-colors">So sánh</Link>
+          <Link href="/projects" className="hover:text-white transition-colors">Dự án</Link>
+          <Link href="/logistics" className="hover:text-white transition-colors text-red-400">🇨🇳 TQ</Link>
           <Link href="/payment" className="hover:text-white transition-colors">Thanh toán</Link>
-          <Link href="/register" className="hover:text-white transition-colors">Đăng ký</Link>
-          <Link href="/supplier/dashboard" className="hover:text-white transition-colors text-amber-400">Cổng NCC</Link>
+          <Link href="/admin" className="hover:text-white transition-colors text-amber-400">Admin</Link>
         </div>
         <Link href="/quote" className="premium-button py-2 text-sm">Báo giá ngay →</Link>
       </nav>
