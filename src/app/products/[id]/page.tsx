@@ -11,7 +11,7 @@ const MOCK_REVIEWS = [
   { id: 4, author: "Lê Minh Tuấn", role: "Chủ nhà", rating: 4, date: "20/02/2026", comment: "Đặt 120m², giao đủ. Giá tốt hơn mua ở VN. Escrow giữ tiền an toàn, yên tâm.", project: "Nhà cấp 4 Long An" },
 ];
 
-export default function ProductDetailPage({ params }: { params: Promise<{ id: string }> }) {
+export default function ProductDetailPage() {
   const [newReview, setNewReview] = useState({ rating: 5, comment: "", author: "" });
   const [submitted, setSubmitted] = useState(false);
 
