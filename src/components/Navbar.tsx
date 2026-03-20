@@ -5,6 +5,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NAV_LINKS = [
+  { href: "/agency", label: "🏢 Agency", highlight: "text-violet-400" },
+  { href: "/htc-elevator", label: "🛗 HTC Elevator", highlight: "text-blue-400" },
+  { href: "/thi-cong", label: "🏗️ Thi Công", highlight: "text-amber-400" },
   { href: "/search", label: "🔍 Tìm kiếm" },
   { href: "/suppliers", label: "Nhà cung cấp" },
   { href: "/quote", label: "Báo giá" },
